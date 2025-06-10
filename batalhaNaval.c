@@ -7,23 +7,25 @@
 int main() {
     // Nível Novato - Posicionamento dos Navios
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
-    int index;
+    int tabuleiro[10][10] = {0};
 
-        int tabuleiro[10][10] = {
+    // navio na linha 2
+    tabuleiro[2][0] = 3;
+    tabuleiro[2][1] = 3;
+    tabuleiro[2][2] = 3;
 
-            {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-            {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-            {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-            {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-            {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-            {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-            {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-            {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-            {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0"},
-            {"0", "0", "0", "0", "0", "0", "0", "0", "0", "0"}
-        };
+    // navio na coluna 5
+    tabuleiro[3][5] = 3;
+    tabuleiro[4][5] = 3;
+    tabuleiro[5][5] = 3;
 
-        printf("%d", tabuleiro[10][10]);
+    // Exibição do tabuleiro
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            printf("%d ", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
 
 
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
